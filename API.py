@@ -15,12 +15,9 @@ op.add_argument("--disable-dev-sh-usage")
 #servico = Service(ChromeDriverManager().install())
 #navegador = webdriver.Chrome(service=servico)
 navegador = webdriver.Chrome(executable_path= os.environ.get("CHROMEDRIVER_PATH"), chrome_options=op)
-
 navegador.get("https://www.google.com/")
-
 navegador.maximize_window()
 time.sleep(5)
-
 
 variavel = previsao = navegador.find_element(By.XPATH, '//*[@id="gb"]/div/div[1]/div/div[1]/a').text
 print(variavel)
