@@ -5,11 +5,8 @@ import time
 import pyautogui
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-import pyperclip
-from tkinter import *
-from PySimpleGUI import PySimpleGUI as sg
-from openpyxl import Workbook, load_workbook
-import os
+
+
 
 servico = Service(ChromeDriverManager().install())
 navegador = webdriver.Chrome(service=servico)
@@ -25,3 +22,4 @@ print(variavel)
 
 
 
+ 
